@@ -23,7 +23,7 @@ if (argv.show === undefined) argv.show = true;
 var unglob = require('../lib/unglob.js');
 
 var path = require('path');
-var prelude = fs.readFileSync(__dirname + '/../bundle/prelude.js', 'utf8');
+var prelude = fs.readFileSync(__dirname + '/../browser/prelude.js', 'utf8');
 
 var bundle, launch;
 var scripts = [];
