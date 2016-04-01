@@ -29,7 +29,7 @@ var bundle, launch;
 var scripts = [];
 var htmlQueue = [];
 var pending = 4;
-var dir = path.resolve(argv._[0] === '-' ? false : argv._[0] || process.cwd());
+var dir = path.resolve((argv._[0] === '-' ? false : argv._[0]) || process.cwd());
 var ecstatic = require('ecstatic')(dir);
 var resolve = require('resolve').sync;
 var pkg = { testling: { harness: argv.harness } };
